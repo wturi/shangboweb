@@ -46,7 +46,7 @@ var TableAdvanced = function () {
             
             "lengthMenu": [
                 [5, 15, 20, -1],
-                [5, 15, 20, "All"] // change per page values here
+                [5, 15, 20,"All",] // change per page values here
             ],
             // set the initial value
             "pageLength": 10,
@@ -120,7 +120,7 @@ var TableAdvanced = function () {
             ],
             "lengthMenu": [
                 [5, 15, 20, -1],
-                [5, 15, 20, "All"] // change per page values here
+                [5, 15, 20,"All",] // change per page values here
             ],
 
             // set the initial value
@@ -221,7 +221,7 @@ var TableAdvanced = function () {
             ],
             "lengthMenu": [
                 [5, 15, 20, -1],
-                [5, 15, 20, "All"] // change per page values here
+                [5, 15, 20,"All",] // change per page values here
             ],
             // set the initial value
             "pageLength": 10,
@@ -307,7 +307,7 @@ var TableAdvanced = function () {
             ],
             "lengthMenu": [
                 [5, 15, 20, -1],
-                [5, 15, 20, "All"] // change per page values here
+                [5, 15, 20,"All",] // change per page values here
             ],
             // set the initial value
             "pageLength": 10,
@@ -360,7 +360,7 @@ var TableAdvanced = function () {
             ],
             "lengthMenu": [
                 [5, 15, 20, -1],
-                [5, 15, 20, "All"] // change per page values here
+                ["All",5, 15, 20 ] // change per page values here
             ],
             "pageLength": 10 // set the initial value            
         });
@@ -396,7 +396,7 @@ var TableAdvanced = function () {
             ],
             "lengthMenu": [
                 [5, 15, 20, -1],
-                [5, 15, 20, "All"] // change per page values here
+                ["All",5, 15, 20, ] // change per page values here
             ],
             "pageLength": 10, // set the initial value,
             "columnDefs": [{  // set default column settings
