@@ -6,25 +6,27 @@ using System.Web.Mvc;
 
 namespace AdminWeb.Controllers
 {
-    public class HomeController : Controller
+    [AboutError]
+    public class HomeController : BaseController
     {
+        //[OutputCache(Duration =10)]  缓存
         public ActionResult Index()
         {
+            
             return View();
         }
 
-        public ActionResult About()
+
+        public ActionResult Login(string username,string password)
         {
-            ViewBag.Message = "Your application description page.";
-
+            if (!string.IsNullOrEmpty(username) && !string.IsNullOrEmpty(password))
+            {
+                Response.Redirect(Url.Action("Index", "Home"));
+            }
             return View();
-        }
+        }   
 
-        public ActionResult Contact()
-        {
-            ViewBag.Message = "Your contact page.";
 
-            return View();
-        }
+        
     }
 }
