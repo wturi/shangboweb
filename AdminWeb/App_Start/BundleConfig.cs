@@ -40,7 +40,8 @@ namespace AdminWeb
                     "~/assets/admin/layout4/css/layout.css",
                     "~/assets/admin/layout4/css/themes/light.css",
                     "~/assets/admin/layout4/css/custom.css",
-                    "~/assets/admin/pages/css/login.css"
+                    "~/assets/admin/pages/css/login.css",
+                    "~/assets/admin/pages/css/news.css"
 
                 ));
 
@@ -58,8 +59,8 @@ namespace AdminWeb
                 "~/assets/global/plugins/datatables/media/js/jquery.dataTables.min.js",
                 "~/assets/global/plugins/datatables/plugins/bootstrap/dataTables.bootstrap.js",
                 "~/assets/global/scripts/metronic.js",
-                "~/assets/admin/layout/scripts/layout.js",
-                "~/assets/admin/layout/scripts/demo.js",
+                "~/assets/admin/layout4/scripts/layout.js",
+                "~/assets/admin/layout4/scripts/demo.js",
                 "~/assets/admin/pages/scripts/table-editable.js",
                 "~/assets/admin/pages/scripts/login.js",
                 "~/assets/global/plugins/jquery-validation/js/jquery.validate.min.js"

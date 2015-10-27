@@ -12,7 +12,7 @@ namespace AdminWeb.Controllers
         //[OutputCache(Duration =10)]  缓存
         public ActionResult Index()
         {
-            
+            ViewBag.Title = "主页";
             return View();
         }
 

@@ -122,6 +122,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\BaseController.cs" />
     <Compile Include="Controllers\ErrorController.cs" />
+    <Compile Include="Controllers\FilesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\NoticeController.cs" />
     <Compile Include="Filters\AboutError.cs" />
@@ -4488,6 +4489,7 @@
     <Content Include="Views\Notice\Release.cshtml" />
     <Content Include="Views\Notice\Audit.cshtml" />
     <Content Include="Views\Notice\QRCode.cshtml" />
+    <Content Include="Views\Files\FileManagement.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

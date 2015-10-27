@@ -27,6 +27,7 @@ namespace AdminWeb.Controllers
             ViewBag.Title = "内容审核";
             return View();
         }
+        
 
         /// <summary>
         /// 二维码

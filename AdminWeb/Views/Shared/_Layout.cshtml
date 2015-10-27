@@ -29,41 +29,41 @@
             <!-- BEGIN PAGE ACTIONS -->
             <!-- DOC: Remove "hide" class to enable the page header actions -->
             @*<div class="page-actions">
-                <div class="btn-group">
-                    <button type="button" class="btn red-haze btn-sm dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
-                        <span class="hidden-sm hidden-xs">Actions&nbsp;</span><i class="fa fa-angle-down"></i>
-                    </button>
-                    <ul class="dropdown-menu" role="menu">
-                        <li>
-                            <a href="javascript:;">
-                                <i class="icon-docs"></i> New Post
-                            </a>
-                        </li>
-                        <li>
-                            <a href="javascript:;">
-                                <i class="icon-tag"></i> New Comment
-                            </a>
-                        </li>
-                        <li>
-                            <a href="javascript:;">
-                                <i class="icon-share"></i> Share
-                            </a>
-                        </li>
-                        <li class="divider">
-                        </li>
-                        <li>
-                            <a href="javascript:;">
-                                <i class="icon-flag"></i> Comments <span class="badge badge-success">4</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="javascript:;">
-                                <i class="icon-users"></i> Feedbacks <span class="badge badge-danger">2</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>*@
+                    <div class="btn-group">
+                        <button type="button" class="btn red-haze btn-sm dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+                            <span class="hidden-sm hidden-xs">Actions&nbsp;</span><i class="fa fa-angle-down"></i>
+                        </button>
+                        <ul class="dropdown-menu" role="menu">
+                            <li>
+                                <a href="javascript:;">
+                                    <i class="icon-docs"></i> New Post
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">
+                                    <i class="icon-tag"></i> New Comment
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">
+                                    <i class="icon-share"></i> Share
+                                </a>
+                            </li>
+                            <li class="divider">
+                            </li>
+                            <li>
+                                <a href="javascript:;">
+                                    <i class="icon-flag"></i> Comments <span class="badge badge-success">4</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">
+                                    <i class="icon-users"></i> Feedbacks <span class="badge badge-danger">2</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>*@
             <!-- END PAGE ACTIONS -->
             <!-- BEGIN PAGE TOP -->
             <div class="page-top">
@@ -489,7 +489,8 @@
                         </a>
                     </li>
                     <!-- BEGIN ANGULARJS LINK -->
-                    @*<li class="tooltips" data-container="body" data-placement="right" data-html="true" data-original-title="AngularJS version demo">
+                    @*
+                        <li class="tooltips" data-container="body" data-placement="right" data-html="true" data-original-title="AngularJS version demo">
                             <a href="angularjs" target="_blank">
                                 <i class="icon-paper-plane"></i>
                                 <span class="title">
@@ -525,6 +526,7 @@
                             </li>
                         </ul>
                     </li>
+
                     <li>
                         <a href="javascript:;">
                             <i class="icon-puzzle"></i>
@@ -576,32 +578,36 @@
                 <!-- END SAMPLE PORTLET CONFIGURATION MODAL FORM-->
                 <!-- BEGIN PAGE HEADER-->
                 <!-- BEGIN PAGE HEAD -->
-                <div class="page-head">
-                    <!-- BEGIN PAGE TITLE -->
-                    <div class="page-title">
-                        <h1>@ViewBag.Title <small>editable datatable samples</small></h1>
+                @if (ViewBag.Title != "主页")
+                {
+                    <div class="page-head">
+                        <!-- BEGIN PAGE TITLE -->
+                        <div class="page-title">
+                            <h1>@ViewBag.Title <small>editable datatable samples</small></h1>
+                        </div>
+                        <!-- END PAGE TITLE -->
+                        <!-- BEGIN PAGE TOOLBAR -->
+                        <!-- END PAGE TOOLBAR -->
                     </div>
-                    <!-- END PAGE TITLE -->
-                    <!-- BEGIN PAGE TOOLBAR -->
-                    <!-- END PAGE TOOLBAR -->
-                </div>
                 <!-- END PAGE HEAD -->
+
                 <!-- BEGIN PAGE BREADCRUMB -->
-                <ul class="page-breadcrumb breadcrumb">
-                    <li>
-                        <a href="index.html">Home</a>
-                        <i class="fa fa-circle"></i>
-                    </li>
-                    <li>
-                        <a href="#">Data Tables</a>
-                        <i class="fa fa-circle"></i>
-                    </li>
-                    <li>
-                        <a href="#">Editable Datatables</a>
-                    </li>
-                </ul>
+                    <ul class="page-breadcrumb breadcrumb">
+                        <li>
+                            <a href="index.html">Home</a>
+                            <i class="fa fa-circle"></i>
+                        </li>
+                        <li>
+                            <a href="#">Data Tables</a>
+                            <i class="fa fa-circle"></i>
+                        </li>
+                        <li>
+                            <a href="#">Editable Datatables</a>
+                        </li>
+                    </ul>
                 <!-- END PAGE BREADCRUMB -->
                 <!-- END PAGE HEADER-->
+                }
                 <!-- BEGIN PAGE CONTENT-->
                 @RenderBody()
                 <!-- END PAGE CONTENT -->
