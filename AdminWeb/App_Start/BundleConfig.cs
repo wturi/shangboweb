@@ -63,7 +63,8 @@ namespace AdminWeb
                 "~/assets/admin/layout4/scripts/demo.js",
                 "~/assets/admin/pages/scripts/table-editable.js",
                 "~/assets/admin/pages/scripts/login.js",
-                "~/assets/global/plugins/jquery-validation/js/jquery.validate.min.js"
+                "~/assets/global/plugins/jquery-validation/js/jquery.validate.min.js",
+                "~/assets/admin/pages/scripts/table-managed.js"
                 ));
         }
     }
