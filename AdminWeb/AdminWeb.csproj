@@ -4472,6 +4472,7 @@
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\_references.js" />
+    <Content Include="Upload\上传.txt" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -4490,6 +4491,7 @@
     <Content Include="Views\Notice\Audit.cshtml" />
     <Content Include="Views\Notice\QRCode.cshtml" />
     <Content Include="Views\Files\FileManagement.cshtml" />
+    <Content Include="Views\Files\DataManagement.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
