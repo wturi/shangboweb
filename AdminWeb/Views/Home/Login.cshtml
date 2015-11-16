@@ -1,15 +1,18 @@
 ﻿@{
     Layout = null;
 }
-
 <!DOCTYPE html>
-
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>Login</title>
     @Styles.Render("~/bundles/assetsCss")
     @Scripts.Render("~/bundles/jquery")
+    <style type="text/css">
+        .logo a {
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body class="login">
     <div class="menu-toggler sidebar-toggler">
@@ -17,8 +20,9 @@
     <!-- END SIDEBAR TOGGLER BUTTON -->
     <!-- BEGIN LOGO -->
     <div class="logo">
-        <a href="index.html">
-            <img src="@Url.Content("~/assets/admin/layout4/img/logo-big.png")" alt="" />
+        <a href="#">
+            @*<img src="@Url.Content("~/assets/admin/layout4/img/logo-big.png")" alt="" />*@
+            <h1><b>上博微信数据管理系统</b></h1>
         </a>
     </div>
     <!-- END LOGO -->
@@ -51,22 +55,22 @@
             </div>
             @*其他方式登录*@
             @*<div class="login-options">
-                <h4>Or login with</h4>
-                <ul class="social-icons">
-                    <li>
-                        <a class="social-icon-color facebook" data-original-title="facebook" href="javascript:;"></a>
-                    </li>
-                    <li>
-                        <a class="social-icon-color twitter" data-original-title="Twitter" href="javascript:;"></a>
-                    </li>
-                    <li>
-                        <a class="social-icon-color googleplus" data-original-title="Goole Plus" href="javascript:;"></a>
-                    </li>
-                    <li>
-                        <a class="social-icon-color linkedin" data-original-title="Linkedin" href="javascript:;"></a>
-                    </li>
-                </ul>
-            </div>*@
+                    <h4>Or login with</h4>
+                    <ul class="social-icons">
+                        <li>
+                            <a class="social-icon-color facebook" data-original-title="facebook" href="javascript:;"></a>
+                        </li>
+                        <li>
+                            <a class="social-icon-color twitter" data-original-title="Twitter" href="javascript:;"></a>
+                        </li>
+                        <li>
+                            <a class="social-icon-color googleplus" data-original-title="Goole Plus" href="javascript:;"></a>
+                        </li>
+                        <li>
+                            <a class="social-icon-color linkedin" data-original-title="Linkedin" href="javascript:;"></a>
+                        </li>
+                    </ul>
+                </div>*@
             <div class="create-account">
                 <p>
                     <a href="javascript:;" id="register-btn" class="uppercase">注册新用户</a>
@@ -74,7 +78,6 @@
             </div>
         </form>
         <!-- END LOGIN FORM -->
-
         <!-- BEGIN FORGOT PASSWORD FORM -->
         <form class="forget-form" action="index.html" method="post">
             <h3>忘记密码?</h3>
@@ -90,7 +93,6 @@
             </div>
         </form>
         <!-- END FORGOT PASSWORD FORM -->
-
         <!-- BEGIN REGISTRATION FORM -->
         <form class="register-form" action="index.html" method="post">
             <h3>注 册</h3>
@@ -370,17 +372,17 @@
                 <input class="form-control placeholder-no-fix" type="password" autocomplete="off" placeholder="再次输入密码" name="rpassword" />
             </div>
             @*<div class="form-group margin-top-20 margin-bottom-20">
-                <label class="check">
-                    <input type="checkbox" name="tnc" /> I agree to the <a href="javascript:;">
-                        Terms of Service
-                    </a>
-                    & <a href="javascript:;">
-                        Privacy Policy
-                    </a>
-                </label>
-                <div id="register_tnc_error">
-                </div>
-            </div>*@
+                    <label class="check">
+                        <input type="checkbox" name="tnc" /> I agree to the <a href="javascript:;">
+                            Terms of Service
+                        </a>
+                        & <a href="javascript:;">
+                            Privacy Policy
+                        </a>
+                    </label>
+                    <div id="register_tnc_error">
+                    </div>
+                </div>*@
             <div class="form-actions">
                 <button type="button" id="register-back-btn" class="btn btn-default">返回</button>
                 <button type="submit" id="register-submit-btn" class="btn btn-success uppercase pull-right">确认</button>

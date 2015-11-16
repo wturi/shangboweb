@@ -3,7 +3,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - 上博</title>
+    <title>@ViewBag.Title - 上博微信数据管理系统</title>
     @Styles.Render("~/bundles/assetsCss")
     @Scripts.Render("~/bundles/jquery")
     @RenderSection("styles", required: false)
@@ -13,9 +13,10 @@
         <!-- BEGIN HEADER INNER -->
         <div class="page-header-inner">
             <!-- BEGIN LOGO -->
-            <div class="page-logo">
-                <a href="index.html">
+            <div class="page-logo text-center">
+                <a href="#" style="text-decoration:none;">
                     <img src="../../assets/admin/layout4/img/logo-light.png" alt="logo" class="logo-default" />
+                    @*<h1><b>管理系统</b></h1>*@
                 </a>
                 <div class="menu-toggler sidebar-toggler">
                     <!-- DOC: Remove the above "hide" to enable the sidebar toggler button on header -->
@@ -546,11 +547,31 @@
                             </li>
                         </ul>
                     </li>
+                    <li>
+                        <a href="javascript:;">
+                            <i class="icon-puzzle"></i>
+                            <span class="title">用户内容上传系统</span>
+                            <span class="arrow "></span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="">
+                                    文件管理
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    数据管理
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
                 </ul>
                 <!-- END SIDEBAR MENU -->
             </div>
         </div>
         <!-- END SIDEBAR -->
+
         <!-- BEGIN CONTENT -->
         <div class="page-content-wrapper">
             <div class="page-content">
