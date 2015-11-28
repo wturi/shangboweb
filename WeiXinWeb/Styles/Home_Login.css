@@ -1,0 +1,53 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Microsoft YaHei';
+}
+input,button,select,textarea{
+    outline:none;
+}
+#MainImg{
+    width:100%;
+    height:50%;
+    max-width:100%;
+}
+#content{
+    width:100%;
+    max-width:100%;
+}
+#shuju{
+    width:94%;
+    margin:3%;
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+    padding-left:10px;
+    padding-right:10px;
+    border:1px solid #ccc;
+}
+#shuju #name{
+    border-bottom:1px solid #ccc;
+}
+#shuju input{
+    border:0;
+    width:100%;
+    font-size:1.2em;
+    line-height:2.9em;
+    padding-left:5px;
+}
+#btn{
+    width:80%;
+    background-color:#961d0f;
+    font-size:1.6em;
+    color:white;
+    text-align:center;
+    margin:18px auto;
+     -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+    line-height:2em;
+}
+#lg{
+    color:#ccc;
+    width:100%;
+    text-align:right;
+    padding-right:5%;
+}
