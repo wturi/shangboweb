@@ -1,0 +1,100 @@
+﻿
+@{
+    ViewBag.Title = "品上博";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@section styles{
+    <link href="~/Styles/Home_Index.css" rel="stylesheet" />
+}
+<div id="content">
+    <img id="MainImg" src="~/Images/img1.jpg" />
+    <div id="tab">
+        <table>
+            <tr>
+                <td class="tab_active_on">珍品100</td>
+                <td class="tab_active_out">上博日历</td>
+                <td class="tab_active_out">微导航</td>
+                <td class="tab_active_out">教育&网站</td>
+            </tr>
+        </table>
+    </div>
+    <div id="c_content">
+        <div class="media">
+            <div class="media-left">
+                <a href="#">
+                    <img class="media-object img-rounded" src="~/Images/zhenpin1.png" />
+                </a>
+            </div>
+            <div class="media-body">
+                <h3 class="media-heading">大克鼎</h3>
+                <small>上博 / October22,2015</small>
+            </div>
+        </div>
+        <div class="media">
+            <div class="media-left">
+                <a href="#">
+                    <img class="media-object img-rounded" src="~/Images/zhenpin1.png" />
+                </a>
+            </div>
+            <div class="media-body">
+                <h3 class="media-heading">大克鼎</h3>
+                <small>上博 / October22,2015</small>
+            </div>
+        </div>
+        <div class="media">
+            <div class="media-left">
+                <a href="#">
+                    <img class="media-object img-rounded" src="~/Images/zhenpin1.png" />
+                </a>
+            </div>
+            <div class="media-body">
+                <h3 class="media-heading">大克鼎</h3>
+                <small>上博 / October22,2015</small>
+            </div>
+        </div>
+        <div class="media">
+            <div class="media-left">
+                <a href="#">
+                    <img class="media-object img-rounded" src="~/Images/zhenpin1.png" />
+                </a>
+            </div>
+            <div class="media-body">
+                <h3 class="media-heading">大克鼎</h3>
+                <small>上博 / October22,2015</small>
+            </div>
+        </div>
+        <div class="media">
+            <div class="media-left">
+                <a href="#">
+                    <img class="media-object img-rounded" src="~/Images/zhenpin1.png" />
+                </a>
+            </div>
+            <div class="media-body">
+                <h3 class="media-heading">大克鼎</h3>
+                <small>上博 / October22,2015</small>
+            </div>
+        </div>
+        <div class="media">
+            <div class="media-left">
+                <a href="#">
+                    <img class="media-object img-rounded" src="~/Images/zhenpin1.png" />
+                </a>
+            </div>
+            <div class="media-body">
+                <h3 class="media-heading">大克鼎</h3>
+                <small>上博 / October22,2015</small>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@section scripts{
+    <script type="text/javascript">
+        var tab = $('#tab');
+        $(document).on('click', '.tab_active_out', function () {
+            $(this).parent().children().attr('class', 'tab_active_out');
+            $(this).attr('class', 'tab_active_on');
+        })
+    </script>
+}
