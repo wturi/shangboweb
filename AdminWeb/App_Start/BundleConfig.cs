@@ -21,7 +21,8 @@ namespace AdminWeb
 
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
                       "~/Scripts/bootstrap.js",
-                      "~/Scripts/respond.js"));
+                      "~/Scripts/respond.js",
+                      "~/Scripts/jquery.qrcode.min.js"));
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
                       "~/Content/site.css"));
@@ -64,7 +65,8 @@ namespace AdminWeb
                 "~/assets/admin/pages/scripts/table-editable.js",
                 "~/assets/admin/pages/scripts/login.js",
                 "~/assets/global/plugins/jquery-validation/js/jquery.validate.min.js",
-                "~/assets/admin/pages/scripts/table-managed.js"
+                "~/assets/admin/pages/scripts/table-managed.js",
+                "~/Scripts/jquery.qrcode.min.js"
                 ));
         }
     }
